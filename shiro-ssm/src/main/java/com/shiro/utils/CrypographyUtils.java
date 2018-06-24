@@ -41,9 +41,9 @@ public class CrypographyUtils {
     }
 
     public static void main(String[] args) {
-        String password = "345";
-        System.out.println("Base64 加密: " + CrypographyUtils.encBase64(password));
-        System.out.println("Base64 解密: " + CrypographyUtils.decBase64("MTIzNDU2"));
+        String password = "123456";
+//        System.out.println("Base64 加密: " + CrypographyUtils.encBase64(password));
+//        System.out.println("Base64 解密: " + CrypographyUtils.decBase64("970d52d48082f3fb0c59d5611d25ec1e"));
 
         System.out.println("MD5 加密: " + CrypographyUtils.md5(password, "盐"));
     }
