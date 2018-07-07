@@ -132,3 +132,7 @@ fabric.properties
 # debug log
 *.log
 *.log.*
+*.iml
+.gitignore
+*.log.*
+oo\.sh
