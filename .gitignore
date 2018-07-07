@@ -98,6 +98,7 @@ hs_err_pid*
 .idea/dynamic.xml
 .idea/uiDesigner.xml
 .idea/modules
+.idea/modules/*.iml
 .idea/*
 utilities/es-shaded/.idea/*
 
