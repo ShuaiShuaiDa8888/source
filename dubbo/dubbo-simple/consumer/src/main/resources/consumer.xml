@@ -4,13 +4,13 @@
        xmlns:dubbo="http://dubbo.apache.org/schema/dubbo"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://dubbo.apache.org/schema/dubbo        http://dubbo.apache.org/schema/dubbo/dubbo.xsd">
 
-    <!-- 消费方应用名，用于计算依赖关系，不是匹配条件，不要与提供方一样 -->
+    <!-- 消费方应用名，用于计算依赖关系，不是匹配条件，不要与提供方一样; name 可以随便命名 -->
     <dubbo:application name="consumer"  />
 
-    <!-- 使用multicast广播注册中心暴露发现服务地址 -->
-    <dubbo:registry address="zookeeper://192.168.109.128:2181" />
+    <!-- 使用 zookeeper 广播注册中心暴露发现服务地址; 注册中心地址要与服务方的地址保持一致 -->
+    <dubbo:registry address="zookeeper://192.168.109.128:2181?backup=192.168.109.130:2181,192.168.109.131:2181" />
 
-    <!-- 生成远程服务代理，可以和本地bean一样使用demoService -->
+    <!-- 生成远程服务代理，可以和本地bean一样使用demoService; id名称随便起,在类中获取远程服务代理的时候的getBean("")中的字段要与其保持一致，interface 要与服务方的接口保持一致 -->
     <dubbo:reference id="demoService"  check="false" interface="com.alibaba.dubbo.demo.DemoService" />
 
 </beans>
