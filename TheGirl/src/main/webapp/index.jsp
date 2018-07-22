@@ -26,7 +26,7 @@
 
 <body>
 <div id="div">
-    <h1>我长得帅吗</h1>
+    <h1>谷世飞长得丑吗</h1>
     <button id="success">超级帅</button>
     <button id="nosuccess">臭死啦</button>
     <br>
