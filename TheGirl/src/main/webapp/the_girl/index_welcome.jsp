@@ -19,11 +19,12 @@
             text-align: center;
         }
 
-        #body-a {
+        .body-a {
             color: green;
             font-size: 24px;
             font-weight: 900;
             font-family:"KaiTi";
+            margin-top: 30px;
         }
 
         #body {
@@ -62,13 +63,15 @@
 <body>
 <div id="all">
     <div id="body">
-        <a href="../views/215.jsp" id="body-a">点我啊</a><br>
-        <img src="./the_girl/hopping.jpg" id="body-img">
+        <a href="../views/215.jsp" class="body-a">215点我啊</a>
+        <div></div>
+        <a href="../views/1702.jsp" class="body-a">1702谁也不拍</a><br>
+        <img src="./the_girl/img/hopping.jpg" id="body-img">
     </div>
     <div id="footer">
         <a class="a" target="_blank" href="http://www.miitbeian.gov.cn"><p class="footerC1">京ICP备18036878号</p></a>
         <a class="a" target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=37152102000038">
-            <img src="./the_girl/beian.png" style="float:left;"/>
+            <img src="./the_girl/img/beian.png" style="float:left;"/>
             <p class="footerC2">鲁公网安备 37152102000038号</p></a>
     </div>
 </div>
