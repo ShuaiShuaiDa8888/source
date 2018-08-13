@@ -42,7 +42,7 @@
         </div>
     </div>
     <div>
-        <img src="" id="img" class="imgs">
+        <img src="file/1702/40.jpg" id="img" class="imgs">
         <h5 id="happy">哈哈哈哈哈</h5>
     </div>
 
