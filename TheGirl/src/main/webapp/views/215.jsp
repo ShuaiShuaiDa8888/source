@@ -55,85 +55,97 @@
     </div>
 </div>
 <script type="text/javascript">
-    $(document).ready(function () {
-        $(".words").hide()
-        $(".imgs").hide()
-        $("#remember").hide()
-    })
+    $(".words").hide()
+    $(".imgs").hide()
+    $("#remember").hide()
 
-    $(document).ready(function () {
-        showWords();
-    });
     $("#success").click(function () {
         $("#remember").show();
-        setTimeout(function(){$("#img").show()}, 1500);
+        setTimeout(function () {
+            $("#img").show()
+        }, 1500);
         $("#nosuccess").hide();
         $("#success").hide();
     });
 
-    function showWords() {
-        var time = 1;
-        $("#nosuccess").click(function () {
-            $("#success").hide();
-            if (time === 1) {
-                $("#h0").show();
-            } else if (time === 2) {
-                $("#h0").hide();
-                $("#h1").show();
-                $("#nosuccess").text("还有呢")
-            } else if (time === 3) {
-                $("#h2").show();
-            } else if (time === 4) {
-                $("#h3").show();
-            } else if (time === 5) {
-                $("#h4").show();
-            } else if (time === 6) {
-                $("#h5").show();
-            } else if (time === 7) {
-                $("#h6").show();
-            } else if (time === 8) {
-                $("#h7").show();
-            } else if (time === 9) {
-                $("#h8").show();
-            } else if (time === 10) {
-                $("#h9").show();
-            } else if (time === 11) {
-                $("#h10").show();
-                $("#nosuccess").hide();
-                $("#img").show();
-                if (!$("#img").is(":hidden")) {
-                    roll();
-                }
+    var time = 1;
+    $("#nosuccess").click(function () {
+        $("#success").hide();
+        if (time === 1) {
+            $("#h0").show();
+        } else if (time === 2) {
+            $("#h0").hide();
+            $("#h1").show();
+            $("#nosuccess").text("还有呢")
+        } else if (time === 3) {
+            $("#h2").show();
+        } else if (time === 4) {
+            $("#h3").show();
+        } else if (time === 5) {
+            $("#h4").show();
+        } else if (time === 6) {
+            $("#h5").show();
+        } else if (time === 7) {
+            $("#h6").show();
+        } else if (time === 8) {
+            $("#h7").show();
+        } else if (time === 9) {
+            $("#h8").show();
+        } else if (time === 10) {
+            $("#h9").show();
+        } else if (time === 11) {
+            $("#h10").show();
+            $("#nosuccess").hide();
+            $("#img").show();
+            if (!$("#img").is(":hidden")) {
+                roll();
             }
-            time++;
-        });
-
-        function roll() {
-            var imgArray = new Array();
-            imgArray[0] = "file/215/215.jpg";
-            imgArray[1] = "file/215/dg.jpg";
-            imgArray[2] = "file/215/da.jpg";
-            imgArray[3] = "file/215/san.jpg";
-            imgArray[4] = "file/215/liu.jpg";
-            imgArray[5] = "file/215/qi.jpg";
-            imgArray[6] = "file/215/ba.jpg";
-            imgArray[7] = "file/215/jiu.jpg";
-            imgArray[8] = "file/215/shi.jpg";
-            imgArray[9] = "file/215/wb.jpg";
-            imgArray[10] = "file/215/hsh.jpg";
-            imgArray[11] = "file/215/dj.jpg";
-            imgArray[12] = "file/215/wb.jpg";
-
-            var interval = 2000;
-            var current = 0;
-            var len = imgArray.length;
-            var setImage = function () {
-                img.src = imgArray[current];
-                current = ++current > len - 1 ? 0 : current;
-            };
-            setImage();
-            setInterval(setImage, interval);
         }
+        time++;
+    });
+
+    function roll() {
+        var imgArray = new Array();
+        imgArray[0] = "file/215/215.jpg";
+        imgArray[1] = "file/215/dg.jpg";
+        imgArray[2] = "file/215/sushe.jpg";
+        imgArray[3] = "file/215/san.jpg";
+        imgArray[4] = "file/215/liu.jpg";
+        imgArray[5] = "file/215/biye17.jpg";
+        imgArray[6] = "file/215/ba.jpg";
+        imgArray[7] = "file/215/jiu.jpg";
+        imgArray[8] = "file/215/shi.jpg";
+        imgArray[9] = "file/215/wb.jpg";
+        imgArray[10] = "file/215/biye16.jpg";
+        imgArray[11] = "file/215/dj.jpg";
+        imgArray[12] = "file/215/wb.jpg";
+        imgArray[13] = "file/215/biye01.jpg";
+        imgArray[14] = "file/215/biye02.jpg";
+        imgArray[15] = "file/215/biye03.jpg";
+        imgArray[16] = "file/215/biye04.jpg";
+        imgArray[17] = "file/215/biye05.jpg";
+        imgArray[18] = "file/215/biye06.jpg";
+        imgArray[19] = "file/215/biye07.jpg";
+        imgArray[20] = "file/215/biye08.jpg";
+        imgArray[21] = "file/215/biye09.jpg";
+        imgArray[22] = "file/215/biye10.jpg";
+        imgArray[23] = "file/215/biye11.jpg";
+        imgArray[24] = "file/215/biye12.jpg";
+        imgArray[25] = "file/215/biye13.jpg";
+        imgArray[26] = "file/215/biye14.jpg";
+        imgArray[27] = "file/215/biye15.jpg";
+
+
+
+        var interval = 2000;
+        var current = 0;
+        var len = imgArray.length;
+        var setImage = function () {
+            img.src = imgArray[current];
+            current = ++current > len - 1 ? 0 : current;
+        };
+        setImage();
+        setInterval(setImage, interval);
     }
 
 </script>

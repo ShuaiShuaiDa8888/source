@@ -53,11 +53,9 @@
     </div>
 </div>
 <script type="text/javascript">
-    $(document).ready(function () {
-        $("#miss").hide()
-        $(".imgs").hide()
-        $("#remember").hide()
-    })
+    $("#miss").hide()
+    $(".imgs").hide()
+    $("#remember").hide()
 
     $("#success").click(function () {
         $("#remember").show();
@@ -88,25 +86,19 @@
         var wordArray = new Array(new Array("马大哈大姐", "魏帅", "刘晓瑞", "吴浩康", "晋统帅", "胡杰"),
             new Array("贺荆龙", "刘开鹏", "田隆隆", "李奕", "梁爽", "李望"),
             new Array("易蔚然", "李浩", "马迎浩", "陈佳奇", "许慧超", "薛祎龑"),
-            new Array("张凯", "杨柳", "王乐乐", "孟泽民", "罗斌", "张政"),
+            new Array("张凯", "杨柳", "王乐乐", "孟泽民", "罗斌", "常海利"),
             new Array("徐婷婷", "黄浦毓", "陈婷婷", "史雪迎", "王伏", "马大哈大姐"));
         var len = wordArray.length;
         var space = 1200;
-        var name1 = "";
-        var name2 = "";
-        var name3 = "";
-        var name4 = "";
-        var name5 = "";
-        var name6 = "";
         var current = 0;
 
         function show() {
-            name1 = wordArray[current][0];
-            name2 = wordArray[current][1];
-            name3 = wordArray[current][2];
-            name4 = wordArray[current][3];
-            name5 = wordArray[current][4];
-            name6 = wordArray[current][5];
+            var name1 = wordArray[current][0];
+            var name2 = wordArray[current][1];
+            var name3 = wordArray[current][2];
+            var name4 = wordArray[current][3];
+            var name5 = wordArray[current][4];
+            var name6 = wordArray[current][5];
 
             $("#word1").html(name1);
             $("#word2").html(name2);
@@ -123,7 +115,7 @@
     }
 
     function roll() {
-        var imgArray = new Array("file/1702/1.jpg", "file/1702/2.jpg","file/1702/3.jpg", "file/1702/4.jpg","file/1702/5.jpg", "file/1702/6.jpg",
+        var imgArray = new Array("file/1702/1.jpg", "file/1702/2.jpg", "file/1702/3.jpg", "file/1702/4.jpg", "file/1702/5.jpg", "file/1702/6.jpg",
             "file/1702/7.jpg", "file/1702/8.jpg", "file/1702/9.jpg", "file/1702/10.jpg", "file/1702/11.jpg", "file/1702/12.jpg",
             "file/1702/13.jpg", "file/1702/14.jpg", "file/1702/15.jpg", "file/1702/16.jpg", "file/1702/17.jpg", "file/1702/18.jpg",
             "file/1702/19.jpg", "file/1702/20.jpg", "file/1702/21.jpg", "file/1702/22.jpg", "file/1702/23.jpg", "file/1702/24.jpg",

@@ -65,7 +65,7 @@
     <div id="body">
         <a href="../views/215.jsp" class="body-a">215点我啊</a>
         <div></div>
-        <a href="../views/1702.jsp" class="body-a">1702谁也不拍</a><br>
+        <a href="../views/1702.jsp" class="body-a">1702谁也不怕</a><br>
         <img src="./the_girl/img/hopping.jpg" id="body-img">
     </div>
     <div id="footer">
