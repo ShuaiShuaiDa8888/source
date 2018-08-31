@@ -9,4 +9,5 @@ include 'dubbo:dubbo-simple:provider'
 findProject(':dubbo:dubbo-simple:provider')?.name = 'provider'
 include 'dubbo:dubbo-simple:consumer'
 findProject(':dubbo:dubbo-simple:consumer')?.name = 'consumer'
+include 'spring-boot'
 
