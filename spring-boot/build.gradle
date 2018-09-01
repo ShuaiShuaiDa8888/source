@@ -20,4 +20,12 @@ dependencies {
     compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.0.4.RELEASE'
     // freemarker依赖包--渲染web页面--动态页面静态化
     compile group: 'org.springframework.boot', name: 'spring-boot-starter-freemarker', version: '2.0.4.RELEASE'
+//    jsp依赖，不加以下两个依赖，不识别jsp
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-tomcat', version: '2.0.4.RELEASE'
+    compile group: 'org.apache.tomcat.embed', name: 'tomcat-embed-jasper', version: '9.0.11'
+//  springboot整合JDBC使用JdbcTemplate
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-jdbc', version: '2.0.4.RELEASE'
+    compile group: 'mysql', name: 'mysql-connector-java', version: '8.0.12'
+    testCompile group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: '2.0.4.RELEASE'
+
 }

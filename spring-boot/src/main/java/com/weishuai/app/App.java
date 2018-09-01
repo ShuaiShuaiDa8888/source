@@ -8,7 +8,7 @@ import org.springframework.context.annotation.ComponentScan;
  * spring-boot启动方式 2
  * Created by WS on 2018/8/31.
  */
-@ComponentScan(basePackages = "com.weishuai.controller")
+@ComponentScan(basePackages = "com.weishuai")
 @EnableAutoConfiguration
 public class App {
     public static void main(String[] args) {
