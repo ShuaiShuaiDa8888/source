@@ -1,0 +1,31 @@
+
+apply plugin: 'java'
+apply plugin: 'war'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+
+    // 必须要引入继承springboot-parent,帮我们实现了许多jar包的依赖、管理，不需要那些jar版本
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-parent', version: '2.0.4.RELEASE', ext: 'pom'
+    // springboot默认集成SpringMVC，只需导入springboot-web依赖即可
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.0.4.RELEASE'
+    // freemarker依赖包--渲染web页面--动态页面静态化
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-freemarker', version: '2.0.4.RELEASE'
+//    jsp依赖，不加以下两个依赖，不识别jsp
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-tomcat', version: '2.0.4.RELEASE'
+    compile group: 'org.apache.tomcat.embed', name: 'tomcat-embed-jasper', version: '9.0.11'
+//  springboot整合JDBC使用JdbcTemplate
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-jdbc', version: '2.0.4.RELEASE'
+//    springboot连接数据库
+    compile group: 'mysql', name: 'mysql-connector-java', version: '8.0.12'
+    testCompile group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: '2.0.4.RELEASE'
+//  springboot集成mybatis
+    compile group: 'org.mybatis.spring.boot', name: 'mybatis-spring-boot-starter', version: '1.3.2'
+}

@@ -1,12 +1,11 @@
 package com.weishuai.controller;
 
-import com.weishuai.mapper.UserMapper;
 import com.weishuai.pojo.User;
 import com.weishuai.service.UserService;
+import com.weishuai.test01.mapper.UserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 /**

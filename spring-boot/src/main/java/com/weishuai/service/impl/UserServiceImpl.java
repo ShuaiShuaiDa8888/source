@@ -1,11 +1,10 @@
 package com.weishuai.service.impl;
 
-import com.weishuai.mapper.UserMapper;
 import com.weishuai.service.UserService;
+import com.weishuai.test01.mapper.UserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 /**
  * Created by WS on 2018/9/1.
