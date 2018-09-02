@@ -37,10 +37,10 @@ dependencies {
 //  springboot集成lombok
     compile group: 'org.projectlombok', name: 'lombok', version: '1.18.2'
 
-//  springboot-log4j  去除springboot自带的logback,避免了与log4j的冲突（LoggerFactory is not a Logback LoggerContext but Logback is on the classpath）
+//  springboot-log4j （勿删）  去除springboot自带的logback,避免了与log4j的冲突（LoggerFactory is not a Logback LoggerContext but Logback is on the classpath）
     compile("org.springframework.boot:spring-boot-starter-log4j"){
-        exclude module: "spring-boot-starter-logging"
-        exclude module: "logback-classic"
-        exclude module: "ch.qos.logback"
+//        exclude module: "spring-boot-starter-logging"
+//        exclude module: "logback-classic"
+//        exclude module: "ch.qos.logback"
     }
 }
