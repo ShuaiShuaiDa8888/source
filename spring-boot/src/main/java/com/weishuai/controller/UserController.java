@@ -2,7 +2,6 @@ package com.weishuai.controller;
 
 import com.weishuai.pojo.User;
 import com.weishuai.service.UserService;
-import com.weishuai.test01.mapper.UserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,8 +17,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class UserController {
     @Autowired
     private UserService userService;
-    @Autowired
-    private UserMapper userMapper;
 
 //    springboot整合JDBC 使用JdbcTemplate
     @RequestMapping(value = "/createUser")
@@ -31,7 +28,7 @@ public class UserController {
 //    springboot整合Mybatis
     @RequestMapping(value = "/getUser")
     public User getUser(int id){
-        return userMapper.getUser(id);
+        return userService.getUser(id);
     }
 
 //    springboot整合事物管理
