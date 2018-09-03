@@ -17,7 +17,14 @@ dependencies {
     // 必须要引入继承springboot-parent,帮我们实现了许多jar包的依赖、管理，不需要那些jar版本
     compile group: 'org.springframework.boot', name: 'spring-boot-starter-parent', version: '2.0.4.RELEASE', ext: 'pom'
     // springboot默认集成SpringMVC，只需导入springboot-web依赖即可
-    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.0.4.RELEASE'
+    compile ("org.springframework.boot:spring-boot-starter-web:2.0.4.RELEASE") {
+        exclude module: 'org.springframework.boot:spring-boot-starter-logging'  //报“LoggerFactory is not a Logback LoggerContext but Logback is on the classpath”需要去除“logback”
+    }
+    // log4j2
+    compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.11.0'
+    compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.11.0'
+    // 用来支持Logger中的Async
+    compile group: 'com.lmax', name: 'disruptor', version: '3.4.2'
     // freemarker依赖包--渲染web页面--动态页面静态化
     compile group: 'org.springframework.boot', name: 'spring-boot-starter-freemarker', version: '2.0.4.RELEASE'
 //    jsp依赖，不加以下两个依赖，不识别jsp
@@ -30,17 +37,9 @@ dependencies {
     testCompile group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: '2.0.4.RELEASE'
 //  springboot集成mybatis
     compile group: 'org.mybatis.spring.boot', name: 'mybatis-spring-boot-starter', version: '1.3.2'
-//  springboot-log4j
-//    compile group: 'org.springframework.boot', name: 'spring-boot-starter-log4j', version: '1.3.8.RELEASE'  //若要不报“LoggerFactory is not a Logback LoggerContext but Logback is on the classpath”需要去除“logback”
 //  springboot-aop
     compile group: 'org.springframework.boot', name: 'spring-boot-starter-aop', version: '2.0.4.RELEASE'
 //  springboot集成lombok
     compile group: 'org.projectlombok', name: 'lombok', version: '1.18.2'
 
-//  springboot-log4j （勿删）  去除springboot自带的logback,避免了与log4j的冲突（LoggerFactory is not a Logback LoggerContext but Logback is on the classpath）
-    compile("org.springframework.boot:spring-boot-starter-log4j"){
-//        exclude module: "spring-boot-starter-logging"
-//        exclude module: "logback-classic"
-//        exclude module: "ch.qos.logback"
-    }
 }
