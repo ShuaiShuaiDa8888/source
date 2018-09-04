@@ -19,14 +19,13 @@ import javax.sql.DataSource;
  * Created by WS on 2018/9/1.
  */
 @Configuration   //注册到springboot容器
-@MapperScan(basePackages = "com.weishuai.test01", sqlSessionFactoryRef = "secondSqlSessionFactory")
+@MapperScan(basePackages = "com.weishuai.test01", sqlSessionFactoryRef = "firstSqlSessionFactory")
 public class DataSource1 {
 
     /**
      * 配置springbootDatasource1数据库
      */
-    @Bean()
-    @Primary
+    @Bean(name = "firstDataSource")
     @ConfigurationProperties(prefix = "spring.datasource.springbootdatasource1")
     public DataSource test01DataSource(){
         return DataSourceBuilder.create().build();
@@ -37,9 +36,8 @@ public class DataSource1 {
      * @param dataSource
      * @return
      */
-    @Bean()
-    @Primary
-    public SqlSessionFactory test01SqlSessionFactory(DataSource dataSource) throws Exception {
+    @Bean(name = "firstSqlSessionFactory")
+    public SqlSessionFactory test01SqlSessionFactory(@Qualifier("firstDataSource") DataSource dataSource) throws Exception {
         SqlSessionFactoryBean bean = new SqlSessionFactoryBean();
         bean.setDataSource(dataSource);
 
@@ -51,14 +49,13 @@ public class DataSource1 {
      * @param dataSource
      * @return
      */
-    @Bean()
-    @Primary
-    public DataSourceTransactionManager test01TransactionManager(DataSource dataSource){
+    @Bean(name = "firstTransactionManager")
+    public DataSourceTransactionManager test01TransactionManager(@Qualifier("firstDataSource") DataSource dataSource){
         return new DataSourceTransactionManager(dataSource);
     }
 
-    @Bean(name = "test01SqlSessionTemplate")
-    public SqlSessionTemplate test01SqlSessionTemplate(SqlSessionFactory sqlSessionFactory){
+    @Bean(name = "firstSqlSessionTemplate")
+    public SqlSessionTemplate test01SqlSessionTemplate(@Qualifier("firstSqlSessionFactory") SqlSessionFactory sqlSessionFactory){
         return new SqlSessionTemplate(sqlSessionFactory);
     }
 }
