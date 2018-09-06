@@ -1,7 +1,5 @@
 package com.weishuai.service.impl;
 
-import com.github.pagehelper.PageHelper;
-import com.github.pagehelper.PageInfo;
 import com.weishuai.mapper.UserMapper;
 import com.weishuai.pojo.User;
 import com.weishuai.service.PageHelperService;
@@ -15,14 +13,14 @@ import java.util.List;
  */
 @Service
 public class PageHelperServiceImpl implements PageHelperService {
-    @Autowired
-    private UserMapper userMapper;
-
-    @Override
-    public PageInfo<User> findUser(int page, int pageSize) {
-        PageHelper.startPage(page, pageSize);
-        List<User> userList = userMapper.findUser();
-        PageInfo<User> userPageInfo = new PageInfo<>(userList);
-        return userPageInfo;
-    }
+//    @Autowired
+//    private UserMapper userMapper;
+//
+//    @Override
+//    public PageInfo<User> findUser(int page, int pageSize) {
+//        PageHelper.startPage(page, pageSize);
+//        List<User> userList = userMapper.findUser();
+//        PageInfo<User> userPageInfo = new PageInfo<>(userList);
+//        return userPageInfo;
+//    }
 }
