@@ -11,7 +11,6 @@ import org.springframework.scheduling.annotation.EnableAsync;
  * spring-boot启动方式 2
  * Created by WS on 2018/8/31.
  */
-@ComponentScan(basePackages = "com.weishuai")
 @MapperScan(basePackages = "com.weishuai.mapper")
 @SpringBootApplication
 @EnableAsync //开启异步调用

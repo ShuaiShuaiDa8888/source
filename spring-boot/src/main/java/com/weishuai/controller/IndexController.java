@@ -15,7 +15,7 @@ import java.util.List;
 public class IndexController {
 
     @RequestMapping(value = "/index")
-    public String index(ModelMap map){
+    public String index(ModelMap map) {
         map.addAttribute("name", "魏帅");
 //        map.put("sex", 0);//0:男，1:女
         map.addAttribute("sex", 0);
@@ -28,4 +28,18 @@ public class IndexController {
 
         return "index";
     }
+
+    /**
+     * 是程序产生堆溢出（查看配置文件可知最大堆内存为750m）
+     *
+     * @param args
+     */
+//    public static void main(String[] args) {
+//        List<Object> list = new ArrayList<>();
+//        for (int i = 0; i < 100; i++) {
+//            Byte[] bytes = new Byte[1024 * 1024];
+//            list.add(bytes);
+//        }
+//        System.out.println("添加成功。。。");
+//    }
 }
