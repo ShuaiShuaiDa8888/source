@@ -138,3 +138,6 @@ fabric.properties
 *.log.*
 oo\.sh
 gradlew
+.mvn
+mvnw
+*.cmd

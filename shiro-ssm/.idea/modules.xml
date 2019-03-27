@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-162676785/TheGirl.iml" filepath="$PROJECT_DIR$/.idea/modules/-162676785/TheGirl.iml" group="TheGirl" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-162676785/TheGirl_main.iml" filepath="$PROJECT_DIR$/.idea/modules/-162676785/TheGirl_main.iml" group="TheGirl" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-162676785/TheGirl_test.iml" filepath="$PROJECT_DIR$/.idea/modules/-162676785/TheGirl_test.iml" group="TheGirl" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-134937387/consumer.iml" filepath="$PROJECT_DIR$/.idea/modules/-134937387/consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-890538048/dubbo.iml" filepath="$PROJECT_DIR$/.idea/modules/-890538048/dubbo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1235253840/dubbo-simple.iml" filepath="$PROJECT_DIR$/.idea/modules/1235253840/dubbo-simple.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1577248990/mq.iml" filepath="$PROJECT_DIR$/.idea/modules/-1577248990/mq.iml" group="mq" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1577248990/mq_main.iml" filepath="$PROJECT_DIR$/.idea/modules/-1577248990/mq_main.iml" group="mq" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1577248990/mq_test.iml" filepath="$PROJECT_DIR$/.idea/modules/-1577248990/mq_test.iml" group="mq" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-554662192/provider.iml" filepath="$PROJECT_DIR$/.idea/modules/-554662192/provider.iml" group="dubbo/dubbo-simple/provider" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-554662192/provider_main.iml" filepath="$PROJECT_DIR$/.idea/modules/-554662192/provider_main.iml" group="dubbo/dubbo-simple/provider" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-554662192/provider_test.iml" filepath="$PROJECT_DIR$/.idea/modules/-554662192/provider_test.iml" group="dubbo/dubbo-simple/provider" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/shiro-ssm.iml" filepath="$PROJECT_DIR$/.idea/modules/shiro-ssm.iml" group="shiro-ssm" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/shiro-ssm_main.iml" filepath="$PROJECT_DIR$/.idea/modules/shiro-ssm_main.iml" group="shiro-ssm" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/shiro-ssm_test.iml" filepath="$PROJECT_DIR$/.idea/modules/shiro-ssm_test.iml" group="shiro-ssm" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1169021265/source.iml" filepath="$PROJECT_DIR$/.idea/modules/1169021265/source.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-305242380/spring-boot.iml" filepath="$PROJECT_DIR$/.idea/modules/-305242380/spring-boot.iml" group="spring-boot" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-305242380/spring-boot_main.iml" filepath="$PROJECT_DIR$/.idea/modules/-305242380/spring-boot_main.iml" group="spring-boot" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-305242380/spring-boot_test.iml" filepath="$PROJECT_DIR$/.idea/modules/-305242380/spring-boot_test.iml" group="spring-boot" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-669412843/springboot-datasource.iml" filepath="$PROJECT_DIR$/.idea/modules/-669412843/springboot-datasource.iml" group="springboot-datasource" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-669412843/springboot-datasource_main.iml" filepath="$PROJECT_DIR$/.idea/modules/-669412843/springboot-datasource_main.iml" group="springboot-datasource" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-669412843/springboot-datasource_test.iml" filepath="$PROJECT_DIR$/.idea/modules/-669412843/springboot-datasource_test.iml" group="springboot-datasource" />
+    </modules>
+  </component>
+</project>
