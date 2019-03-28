@@ -6,6 +6,8 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * synchronized
+ * 自定义容器，提供新增元素（add）和获取元素数量（size）方法
+ * 启动两个线程，线程1向容器中新增10个数据，线程2监听元素容器数量，当元素容器数量为5时线程2输出信息并终止
  * Created by WS on 2019/3/26.
  */
 public class Demo_01 {
