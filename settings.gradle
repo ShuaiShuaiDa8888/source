@@ -11,4 +11,5 @@ include 'dubbo:dubbo-simple:consumer'
 findProject(':dubbo:dubbo-simple:consumer')?.name = 'consumer'
 include 'spring-boot'
 include 'springboot-datasource'
+include 'Test'
 
